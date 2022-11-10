@@ -1,0 +1,284 @@
+:root {
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-size: .875rem;
+  --image-size-small: 80px;
+  --image-size-large: 100px;
+  --color-superlight: rgb(200, 200, 200);
+  --color-light: rgb(160, 160, 160);
+  --color-medium: rgb(140, 140, 140);
+  --color-default: rgb(120, 120, 120);
+  --color-dark: rgb(100, 100, 100);
+  --color-link: rgb(53, 118, 209);
+  --content-spacing: 1.3rem;
+
+  /* Gradients */
+  /* --gradient_bg_color: #edf0f2;
+
+  --gradient_spot1_color: #f2254a;
+  --gradient_spot1_w: 75%;
+  --gradient_spot1_h: 75%;
+  --gradient_spot1_x: 0%;
+  --gradient_spot1_y: 0%;
+
+  --gradient_spot2_color: #078617;
+  --gradient_spot2_w: 75%;
+  --gradient_spot2_h: 75%;
+  --gradient_spot2_x: 100%;
+  --gradient_spot2_y: 0%;
+
+  --gradient_spot3_color: #ffffff;
+  --gradient_spot3_w: 75%;
+  --gradient_spot3_h: 75%;
+  --gradient_spot3_x: 100%;
+  --gradient_spot3_y: 100%;
+
+  --gradient_spot4_color: #d6e900;
+  --gradient_spot4_w: 75%;
+  --gradient_spot4_h: 75%;
+  --gradient_spot4_x: 0%;
+  --gradient_spot4_y: 100%; */
+
+  --gradient_bg_color: #edf0f2;
+
+  --gradient_spot1_color: #b7d3ed;
+  --gradient_spot1_w: 75%;
+  --gradient_spot1_h: 75%;
+  --gradient_spot1_x: 0%;
+  --gradient_spot1_y: 0%;
+
+  --gradient_spot2_color: #93e9f6;
+  --gradient_spot2_w: 75%;
+  --gradient_spot2_h: 75%;
+  --gradient_spot2_x: 100%;
+  --gradient_spot2_y: 0%;
+
+  --gradient_spot3_color: #8feffb;
+  --gradient_spot3_w: 75%;
+  --gradient_spot3_h: 75%;
+  --gradient_spot3_x: 100%;
+  --gradient_spot3_y: 100%;
+
+  --gradient_spot4_color: #8bb8ea;
+  --gradient_spot4_w: 75%;
+  --gradient_spot4_h: 75%;
+  --gradient_spot4_x: 0%;
+  --gradient_spot4_y: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gradient_bg_color);
+  background-image:
+    radial-gradient(
+      var(--gradient_spot1_w) var(--gradient_spot1_h)
+      at left var(--gradient_spot1_x) top var(--gradient_spot1_y),
+      var(--gradient_spot1_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot2_w) var(--gradient_spot2_h)
+      at left var(--gradient_spot2_x) top var(--gradient_spot2_y),
+      var(--gradient_spot2_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot3_w) var(--gradient_spot3_h)
+      at left var(--gradient_spot3_x) top var(--gradient_spot3_y),
+      var(--gradient_spot3_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot4_w) var(--gradient_spot4_h)
+      at left var(--gradient_spot4_x) top var(--gradient_spot4_y),
+      var(--gradient_spot4_color),
+      transparent
+    );
+  color: var(--color-default);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  overflow: hidden;
+}
+
+h1 {
+  background: linear-gradient(to right, #5c92cf 0%, rgba(92, 146, 207, 0.738) 19%, rgba(92, 146, 207, 0.541) 34%, rgba(92, 146, 207, 0.382) 47%, rgba(92, 146, 207, 0.278) 56.5%, rgba(92, 146, 207, 0.194) 65%, rgba(92, 146, 207, 0.126) 73%, rgba(92, 146, 207, 0.075) 80.2%, rgba(92, 146, 207, 0.042) 86.1%, rgba(92, 146, 207, 0.021) 91%, rgba(92, 146, 207, 0.008) 95.2%, rgba(92, 146, 207, 0.002) 98.2%, rgba(92, 146, 207, 0) 100%);
+  box-shadow: inset 0 -15px 10px -10px rgba(0, 0, 0, .05);
+  font-family: 'Nabla', cursive;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 0;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    padding: 4rem 0px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    margin: 0 0 3rem;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  ul {
+    margin: 1em auto 3em;
+  }
+}
+
+li {
+  background: rgba(255, 255, 255, .4);
+  border-bottom: 1px solid var(--color-superlight);
+  padding: var(--content-spacing);
+}
+
+@media (min-width: 800px) {
+  li {
+    background: rgba(255, 255, 255, .4);
+    border-bottom: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 
+                0 2px 4px rgba(0, 0, 0, .07), 
+                0 4px 8px rgba(0, 0, 0, .07), 
+                0 8px 16px rgba(0, 0, 0, .07),
+                0 16px 32px rgba(0, 0, 0, .07), 
+                0 32px 64px rgba(0, 0, 0, .07);
+    margin: 0 0 var(--content-spacing);
+  }
+}
+
+li:hover {
+  background: rgba(255, 255, 255, .9);
+}
+
+.item {
+  font-size: 0;
+}
+
+.item a {
+  color: inherit;
+}
+
+.item .image {
+  display: inline-block;
+  height: var(--image-size-small);
+  overflow: hidden;
+  position: relative;
+  width: var(--image-size-small);
+}
+
+@media (min-width: 800px) {
+  .item .image {
+    height: var(--image-size-large);
+    width: var(--image-size-large);
+  }
+}
+
+.item .image img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.item .image,
+.item .info {
+  vertical-align: top;
+}
+
+.item .info {
+  display: inline-block;
+  font-size: var(--font-size);
+  padding-left: var(--content-spacing);
+  width: calc(100% - var(--image-size-small));
+}
+
+@media (min-width: 800px) {
+  .item .info {
+    width: calc(100% - var(--image-size-large));
+  }
+}
+
+.item .info span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.item .brand {
+  color: var(--color-light);
+  font-size: .8em;
+}
+
+.item .title {
+  color: var(--color-default);
+  font-size: 1.2em;
+}
+
+.item .price {
+  color: var(--color-medium);
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.item .title,
+.item .price {
+  font-weight: 500;
+}
+
+.item .url {
+  color: var(--color-light);
+  font-size: .8em;
+}
+
+.item a:hover .url {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .item .brand {
+    font-size: .85em;
+  }
+
+  .item .title {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+  }
+
+  .item .price {
+    font-size: 1.2em;
+    margin-bottom: 11px;
+  }
+
+  .item .url {
+    font-size: .9em;
+  }
+}
